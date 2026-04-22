@@ -6,7 +6,18 @@ import json
 import os
 import math
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(title="Korea Industrial Accident Calculator API")
+
+# --- CORS Configuration ---
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # For production, you can replace "*" with ["https://korea-industrial-accident-api.web.app"]
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # --- Constants & Data Load ---
 def get_standards():
