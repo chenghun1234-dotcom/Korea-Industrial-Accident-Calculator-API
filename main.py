@@ -178,7 +178,8 @@ def root():
             <p>한국 산재 보상 기준을 자동으로 산정하는 고성능 B2B API 엔진입니다.<br>병원 산재 담당자 및 기업 노무 실무자를 위해 설계되었습니다.</p>
             
             <div class="buttons">
-                <a href="/docs" class="btn btn-primary">API Documentation</a>
+                <a href="https://korea-industrial-accident-api.web.app" class="btn btn-primary">Go to B2B Dashboard</a>
+                <a href="/docs" class="btn btn-outline">API Documentation</a>
                 <a href="/standards" class="btn btn-outline">Check 2026 Standards</a>
             </div>
 
