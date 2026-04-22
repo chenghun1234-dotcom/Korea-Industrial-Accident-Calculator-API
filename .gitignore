@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.vercel/
+test_logic.py
+.env
+venv/
+.idea/
+.vscode/
