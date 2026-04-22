@@ -13,7 +13,12 @@ app = FastAPI(title="Korea Industrial Accident Calculator API")
 # --- CORS Configuration ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # For production, you can replace "*" with ["https://korea-industrial-accident-api.web.app"]
+    allow_origins=[
+        "https://korea-industrial-accident-api.web.app",
+        "https://korea-industrial-accident-api.firebaseapp.com",
+        "http://localhost:5000", # Common local port
+        "*" # Keep as backup for RapidAPI testing
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
